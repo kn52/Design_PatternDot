@@ -1,6 +1,7 @@
 ﻿namespace DesignPatternDemo.Creational
 {
     using System;
+    using DesignPatternDemo.Creational.AbstractFactory;
     using DesignPatternDemo.Creational.FactoryMethod;
     
     public class CreationalPattern
@@ -12,6 +13,7 @@
                 Console.Clear();
                 Console.WriteLine("=====Creational Design Pattern====");
                 Console.WriteLine("1. Factory Method Pattern");
+                Console.WriteLine("2. Abstract Factory Pattern");
                 Console.WriteLine("n. Exit");
                 Console.Write("Enter your choice: ");
                 choice = Console.ReadLine();
@@ -22,6 +24,10 @@
                 {
                     case "1":
                         CardFactory.Factory();
+                        break;
+
+                    case "2":
+                        AbFactory.AFactory();
                         break;
 
                     case "n":
