@@ -6,6 +6,7 @@
     using DesignPatternDemo.Behavioral.Observer;
     using DesignPatternDemo.Behavioral.State;
     using DesignPatternDemo.Behavioral.Strategy;
+    using DesignPatternDemo.Behavioral.Template;
 
     public class BehavioralPattern
     {
@@ -20,6 +21,7 @@
                 Console.WriteLine("3. State Pattern");
                 Console.WriteLine("4. Iterator Pattern");
                 Console.WriteLine("5. Interpreter Pattern");
+                Console.WriteLine("6. Template Pattern");
                 Console.WriteLine("n. Exit");
                 Console.Write("Enter your choice: ");
                 choice = Console.ReadLine();
@@ -46,6 +48,10 @@
 
                     case "5":
                         InterpreterDemo.Interpreter();
+                        break;
+
+                    case "6":
+                        TemplateDemo.Template();
                         break;
 
                     case "n":
