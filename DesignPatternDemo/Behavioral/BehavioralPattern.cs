@@ -2,7 +2,9 @@
 {
     using System;
     using DesignPatternDemo.Behavioral.Observer;
-    
+    using DesignPatternDemo.Behavioral.State;
+    using DesignPatternDemo.Behavioral.Strategy;
+
     public class BehavioralPattern
     {
         public void Behavioral()
@@ -13,6 +15,7 @@
                 Console.WriteLine("=====Behavioral Design Pattern====");
                 Console.WriteLine("1. Observer Pattern");
                 Console.WriteLine("2. Strategy Pattern");
+                Console.WriteLine("2. State Pattern");
                 Console.WriteLine("n. Exit");
                 Console.Write("Enter your choice: ");
                 choice = Console.ReadLine();
@@ -28,6 +31,11 @@
                     case "2":
                         StretegyDemo.Strategy();
                         break;
+
+                    case "3":
+                        StateDemo.State();
+                        break;
+
 
                     case "n":
                         Environment.Exit(1);
