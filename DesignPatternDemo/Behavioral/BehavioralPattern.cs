@@ -1,6 +1,7 @@
 ﻿namespace DesignPatternDemo.Behavioral
 {
     using System;
+    using DesignPatternDemo.Behavioral.Iterator;
     using DesignPatternDemo.Behavioral.Observer;
     using DesignPatternDemo.Behavioral.State;
     using DesignPatternDemo.Behavioral.Strategy;
@@ -15,7 +16,8 @@
                 Console.WriteLine("=====Behavioral Design Pattern====");
                 Console.WriteLine("1. Observer Pattern");
                 Console.WriteLine("2. Strategy Pattern");
-                Console.WriteLine("2. State Pattern");
+                Console.WriteLine("3. State Pattern");
+                Console.WriteLine("4. Iterator Pattern");
                 Console.WriteLine("n. Exit");
                 Console.Write("Enter your choice: ");
                 choice = Console.ReadLine();
@@ -36,6 +38,10 @@
                         StateDemo.State();
                         break;
 
+                    case "4":
+                        IteratorDemo.Iterator();
+                        break;
+
 
                     case "n":
                         Environment.Exit(1);
@@ -50,4 +56,4 @@
 
         private string choice = "y";
     }
-    }
+}
