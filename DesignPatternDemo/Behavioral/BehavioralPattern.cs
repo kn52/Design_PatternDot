@@ -1,6 +1,7 @@
 ﻿namespace DesignPatternDemo.Behavioral
 {
     using System;
+    using DesignPatternDemo.Behavioral.Interpreter;
     using DesignPatternDemo.Behavioral.Iterator;
     using DesignPatternDemo.Behavioral.Observer;
     using DesignPatternDemo.Behavioral.State;
@@ -18,6 +19,7 @@
                 Console.WriteLine("2. Strategy Pattern");
                 Console.WriteLine("3. State Pattern");
                 Console.WriteLine("4. Iterator Pattern");
+                Console.WriteLine("5. Interpreter Pattern");
                 Console.WriteLine("n. Exit");
                 Console.Write("Enter your choice: ");
                 choice = Console.ReadLine();
@@ -42,6 +44,9 @@
                         IteratorDemo.Iterator();
                         break;
 
+                    case "5":
+                        InterpreterDemo.Interpreter();
+                        break;
 
                     case "n":
                         Environment.Exit(1);
