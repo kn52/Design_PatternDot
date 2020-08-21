@@ -12,6 +12,7 @@
                 Console.Clear();
                 Console.WriteLine("=====Behavioral Design Pattern====");
                 Console.WriteLine("1. Observer Pattern");
+                Console.WriteLine("2. Strategy Pattern");
                 Console.WriteLine("n. Exit");
                 Console.Write("Enter your choice: ");
                 choice = Console.ReadLine();
@@ -22,6 +23,10 @@
                 {
                     case "1":
                         ObserverDemo.Observer();
+                        break;
+
+                    case "2":
+                        StretegyDemo.Strategy();
                         break;
 
                     case "n":
