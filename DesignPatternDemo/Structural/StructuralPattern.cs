@@ -15,6 +15,7 @@
                 Console.WriteLine("=====Structural Design Pattern====");
                 Console.WriteLine("1. Composite Pattern");
                 Console.WriteLine("2. Facade Pattern");
+                Console.WriteLine("3. Decorator Pattern");
                 Console.WriteLine("n. Exit");
                 Console.Write("Enter your choice: ");
                 choice = Console.ReadLine();
@@ -29,6 +30,10 @@
 
                     case "2":
                         FacadeDemo.Facade();
+                        break;
+
+                    case "3":
+                        DecoratorDemo.Decorator();
                         break;
 
                     case "n":
