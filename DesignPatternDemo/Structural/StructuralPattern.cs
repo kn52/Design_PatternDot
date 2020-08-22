@@ -2,6 +2,7 @@
 {
     using System;
     using DesignPatternDemo.Structural.Adaptor;
+    using DesignPatternDemo.Structural.Bridge;
     using DesignPatternDemo.Structural.Composite;
     using DesignPatternDemo.Structural.Decorator;
     using DesignPatternDemo.Structural.Facade;
@@ -18,6 +19,7 @@
                 Console.WriteLine("2. Facade Pattern");
                 Console.WriteLine("3. Decorator Pattern");
                 Console.WriteLine("4. Adaptor Pattern");
+                Console.WriteLine("5. Bridge Pattern");
                 Console.WriteLine("n. Exit");
                 Console.Write("Enter your choice: ");
                 choice = Console.ReadLine();
@@ -40,6 +42,10 @@
 
                     case "4":
                         AdaptorDemo.Adaptor();
+                        break;
+
+                    case "5":
+                        BridgeDemo.Bridge();
                         break;
 
                     case "n":
