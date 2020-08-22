@@ -3,7 +3,8 @@
     using System;
     using DesignPatternDemo.Behavioral;
     using DesignPatternDemo.Creational;
-    
+    using DesignPatternDemo.Structural;
+
     class DesignPattern
     {
         private string choice = "y";
@@ -20,6 +21,7 @@
                 Console.WriteLine("=====Design Pattern====");
                 Console.WriteLine("1. Creational Design Pattern");
                 Console.WriteLine("2. Behavioral Design Pattern");
+                Console.WriteLine("3. Structural Design Pattern");
                 Console.WriteLine("n. Exit");
                 Console.Write("Enter your choice: ");
                 choice = Console.ReadLine();
@@ -34,6 +36,10 @@
 
                     case "2":
                         new BehavioralPattern().Behavioral();
+                        break;
+                        
+                    case "3":
+                        new StructuralPattern().Structural();
                         break;
 
                     case "n":
