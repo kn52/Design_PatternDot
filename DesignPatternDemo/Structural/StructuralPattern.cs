@@ -2,6 +2,9 @@
 {
     using System;
     using DesignPatternDemo.Structural.Composite;
+    using DesignPatternDemo.Structural.Decorator;
+    using DesignPatternDemo.Structural.Facade;
+
     public class StructuralPattern
     {
         public void Structural()
@@ -11,6 +14,7 @@
                 Console.Clear();
                 Console.WriteLine("=====Structural Design Pattern====");
                 Console.WriteLine("1. Composite Pattern");
+                Console.WriteLine("2. Facade Pattern");
                 Console.WriteLine("n. Exit");
                 Console.Write("Enter your choice: ");
                 choice = Console.ReadLine();
@@ -21,6 +25,10 @@
                 {
                     case "1":
                         CompositeDemo.Composite();
+                        break;
+
+                    case "2":
+                        FacadeDemo.Facade();
                         break;
 
                     case "n":
