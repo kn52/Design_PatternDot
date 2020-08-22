@@ -1,6 +1,7 @@
 ﻿namespace DesignPatternDemo.Structural
 {
     using System;
+    using DesignPatternDemo.Structural.Adaptor;
     using DesignPatternDemo.Structural.Composite;
     using DesignPatternDemo.Structural.Decorator;
     using DesignPatternDemo.Structural.Facade;
@@ -16,6 +17,7 @@
                 Console.WriteLine("1. Composite Pattern");
                 Console.WriteLine("2. Facade Pattern");
                 Console.WriteLine("3. Decorator Pattern");
+                Console.WriteLine("4. Adaptor Pattern");
                 Console.WriteLine("n. Exit");
                 Console.Write("Enter your choice: ");
                 choice = Console.ReadLine();
@@ -34,6 +36,10 @@
 
                     case "3":
                         DecoratorDemo.Decorator();
+                        break;
+
+                    case "4":
+                        AdaptorDemo.Adaptor();
                         break;
 
                     case "n":
