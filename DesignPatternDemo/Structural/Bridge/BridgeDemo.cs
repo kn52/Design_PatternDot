@@ -10,7 +10,6 @@
             Console.WriteLine("=====Messaging=====");
             int messageType = 2;
             string message = "We shall meet at a coffee shop in Istanbul near my home.";
-            Console.WriteLine(message.Length);
             if (messageType == 1)
             {
                 AbstractMessage longMessage = new LongMessage(new EmailMessageSender());
